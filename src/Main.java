@@ -6,7 +6,7 @@ public class Main {
         //PrecedenceExample1.main(args);
         //UserInputExample.main(args);
         //Assignment.main(args);
-        //evenNumber.main(args);
+        evenNumber.main(args);
     }
 }
 

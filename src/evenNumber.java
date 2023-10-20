@@ -12,6 +12,6 @@ public class evenNumber {
                 count++;
             }
         }
-        System.out.println(count + " even number(s)");
+        System.out.println(count + " even number(s)\n"+ (3-count) + " odd number(s)");
     }
 }

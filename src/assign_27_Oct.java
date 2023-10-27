@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class assign_27_Oct {
+/*Accept an input and check if it is an integer.*/
 
     public static void assign_27_Oct_1(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -12,6 +13,8 @@ public class assign_27_Oct {
             System.out.println("No");
         }
     }
+
+
     public static void assign_27_Oct_2(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Please enter an integer:");
@@ -49,4 +52,38 @@ public class assign_27_Oct {
         }
 
     }
+
+    public static void while_for_do_convert1(String[] args) {
+        int x = 15;
+        while (x < 20){
+            System.out.println("value of x : " + x);
+            x++;
+        }
+    }
+
+    public static void while_for_do_convert2(String[] args) {
+        int x=15;
+        for (int i=15;i<20;i++){
+            System.out.println("value of x : " + x);
+            x++;
+        }
+    }
+
+    public static void while_for_do_convert3(String[] args) {
+        int x=15;
+        do {
+            System.out.println("value of x : " + x);
+            x++;
+        }while (x < 20);
+    }
+
+    public static void multiplication_table(String[] args) {
+        for (int i=1;i<=10;i++){
+            for (int j=1;j<=10;j++){
+                System.out.print(i*j);
+                System.out.print("  ");
+            }
+        }
+    }
 }
+

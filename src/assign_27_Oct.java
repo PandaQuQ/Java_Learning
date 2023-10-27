@@ -7,14 +7,16 @@ public class assign_27_Oct {
         Scanner sc = new Scanner(System.in);
         System.out.println("Please enter an integer:");
         try {
-            int num_1 = sc.nextInt();
+            sc.nextInt();
             System.out.println("Yeah!");
         } catch (Exception e) {
             System.out.println("No");
         }
     }
 
-
+/*
+Accept three numbers and to print the largest value.
+ */
     public static void assign_27_Oct_2(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Please enter an integer:");
@@ -29,6 +31,12 @@ public class assign_27_Oct {
         }
         System.out.println(num_old);
     }
+
+    /*
+     Accepts an input and prints the closest integers.
+     For example if the user inputs 6.25, then closest integer is 6.
+     If the user inputs 6.75, then closest integer is 7.
+     */
     public static void assign_27_Oct_3(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Please enter an integer:");
@@ -41,6 +49,13 @@ public class assign_27_Oct {
         }
         System.out.println(num);
     }
+
+    /*
+    In the UK, purchase of certain items such as Alcohol drinks and Tabaco
+    products requires age check. Asks the user for their year of birth, if the
+    person is older than 23 years old, then print (“Purchase Permitted”), if not,
+    print “Purchase not permitted due to age restrictions”.
+     */
 
     public static void assign_27_Oct_4(String[] args) {
         Scanner sc = new Scanner(System.in);

@@ -7,7 +7,7 @@ public class Tutorial010424 {
     }
 
     public static void Q1(){
-        int[] intArray = new Random().ints(30).toArray();
+        int[] intArray = new Random().ints(5,0,99).toArray();
         for (int i : intArray){
             System.out.print(i + " ");
         }

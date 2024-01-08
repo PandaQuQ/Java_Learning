@@ -1,4 +1,5 @@
 
+
 public class Main {
     public static void main(String[] args) {
         /*myFirstClass.show();
@@ -17,7 +18,8 @@ public class Main {
         assign_27_Oct.while_for_do_convert3(args);
         assign_27_Oct.multiplication_table(args);*/
 //        assign_27_Oct.AgewithChecks(args);
-        week6Exercises.Exercise7();
+        //week6Exercises.Exercise7();
+
     }
 }
 

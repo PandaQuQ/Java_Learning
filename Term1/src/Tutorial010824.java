@@ -3,7 +3,7 @@ import java.util.Collection;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Tutorial010424 {
+public class Tutorial010824 {
     public static void main(String[] args) {
         //Q1();
         //Q2();

@@ -178,8 +178,14 @@ public class Tutorial010824 {
         System.out.println();
     }
     
+    public static void Q6(){    
+        Array ini = {1,2,3,4,5};
+        
+    }
 
 }
+
+
 
 
 

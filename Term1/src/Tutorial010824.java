@@ -1,5 +1,9 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -12,6 +16,7 @@ public class Tutorial010824 {
         //Q5();
         //Q5_multiplication();
         //Q5_division();
+        Q6();
         
     }
 
@@ -179,8 +184,14 @@ public class Tutorial010824 {
     }
     
     public static void Q6(){    
-        Array ini = {1,2,3,4,5};
+        int[] ini = new Random().ints(0,9,5).toArray();
         
+        for(int i : ini){
+
+        }
+        List<Integer> y = Arrays.asList(ini);
+        int x = Collections.max(y) - Collections.min(y);
+        System.out.println(x);
     }
 
 }

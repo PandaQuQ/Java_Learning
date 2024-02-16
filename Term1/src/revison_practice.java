@@ -41,7 +41,7 @@ public class revison_practice {
         
         System.out.println(dang.length);
         }
-        public static String findMid(String a) {
+        public static char findMid(String a) {
             int middle = a.length()/2;
             if (middle%2 == 0) {
                 middle = middle - middle%1;

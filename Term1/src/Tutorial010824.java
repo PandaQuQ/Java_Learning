@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class Tutorial010824 {
     public static void main(String[] args) {
@@ -189,7 +190,7 @@ public class Tutorial010824 {
         for(int i : ini){
 
         }
-        List<Integer> y = Arrays.asList(ini);
+        List<Integer> y = Arrays.stream(ini).boxed().collect(Collectors.toList());
         int x = Collections.max(y) - Collections.min(y);
         System.out.println(x);
     }

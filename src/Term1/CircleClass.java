@@ -1,3 +1,4 @@
+ 
 import java.util.Scanner;
 public class CircleClass {
     public static double Area(double r) {
@@ -21,6 +22,7 @@ public class CircleClass {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the radius of the circle: ");
         double r = sc.nextDouble();
+        sc.close();
         System.out.println();
         System.out.println("The area of the circle is "+Area(r));
         System.out.println("The circumference of the circle is "+circumference(r));

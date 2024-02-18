@@ -1,3 +1,4 @@
+ 
 import java.util.Scanner;
 
 public class TriangleClass {
@@ -15,6 +16,7 @@ public class TriangleClass {
         double a = sc.nextDouble();
         double b = sc.nextDouble();
         double c = sc.nextDouble();
+        sc.close();
         double s = Circumference(a,b,c);
         double area = Area(a, b, c, s);
         System.out.println("Circumference: " + s);

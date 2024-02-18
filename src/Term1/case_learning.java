@@ -1,3 +1,4 @@
+ 
 import java.util.Scanner;
 
 public class case_learning {
@@ -5,6 +6,7 @@ public class case_learning {
         Scanner sc = new Scanner(System.in);
         System.out.println("Please enter an integer between 1 and 7:");
         int day = sc.nextInt();
+        sc.close();
         switch (day){
             case 1:
                 System.out.println("Monday");

@@ -1,7 +1,5 @@
-import java.lang.reflect.Array;
-import java.util.ArrayList;
+ import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
@@ -37,6 +35,7 @@ public class Tutorial010824 {
         int ind = sc.nextInt();
         System.out.println();
 
+        sc.close();
         int [] newIntArray = new int[intArray.length + 1];
 
         for (int i = 0; i < ind + 1; i++){
@@ -78,7 +77,7 @@ public class Tutorial010824 {
     
     public static void Q3() {
         String[] strArray = {"bcd","abd","jude","bcd","oiu"};
-        ArrayList dupList = new ArrayList<String>();
+        ArrayList<String> dupList = new ArrayList<String>();
         for (int i = 0; i < strArray.length-1; i++){
 
             for(int j = i + 1; j < strArray.length;j++){
@@ -93,7 +92,7 @@ public class Tutorial010824 {
     public static void Q4() {
         String[] strArray1 = {"Python","JAVA","PHP"};
         String[] strArray2 = {"MYSQL","Oracle","PHP"};
-        ArrayList commonElement = new ArrayList<String>();
+        ArrayList<String> commonElement = new ArrayList<String>();
 
         for(int i = 0; i < strArray1.length;i++){
             for(int j = 0; j < strArray2.length;j++){
@@ -187,9 +186,7 @@ public class Tutorial010824 {
     public static void Q6(){    
         int[] ini = new Random().ints(0,9,5).toArray();
         
-        for(int i : ini){
 
-        }
         List<Integer> y = Arrays.stream(ini).boxed().collect(Collectors.toList());
         int x = Collections.max(y) - Collections.min(y);
         System.out.println(x);

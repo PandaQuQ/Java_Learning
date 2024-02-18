@@ -1,9 +1,10 @@
+
 public class Ball {
     private String Colour;
     private static int Number;
     public Ball(String Col, int num){
         this.Colour = Col;
-        this.Number = num;
+        Ball.Number = num;
     }
     public String getColour(){
         return Colour;

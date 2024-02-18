@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -53,6 +52,7 @@ public class revison_practice {
             Scanner sc = new Scanner(System.in);
             System.out.print("Please enter a string: ");
             String aString = sc.next();
+            sc.close();
             System.out.println();
             System.out.println(findMid(aString));
         }

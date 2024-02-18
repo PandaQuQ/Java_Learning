@@ -1,3 +1,4 @@
+ 
 import java.util.Scanner;
 
 public class UserInputExample{
@@ -10,5 +11,7 @@ public class UserInputExample{
         System.out.println("Please enter height in meters:");
         double height = sc.nextDouble();
         System.out.println("Your name: " + Name + " Your age: " + Age + " Your height: " + height);
+        
+        sc.close(); // Close the Scanner object
     }
 }

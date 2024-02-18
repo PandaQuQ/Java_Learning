@@ -1,3 +1,4 @@
+ 
 import java.util.Scanner;
 
 public class Exercise24Nov {
@@ -20,6 +21,7 @@ public class Exercise24Nov {
         double x = sc.nextDouble();
         System.out.print("\nPlease enter y: ");
         double y = sc.nextDouble();
+        sc.close();
         double result = power(x,y);
 
         System.out.println("\nThe result is "+result);
@@ -31,6 +33,7 @@ public class Exercise24Nov {
         double x = sc.nextDouble();
         System.out.print("\nPlease enter the quantity of this item sold: ");
         double y = sc.nextDouble();
+        sc.close();
         double Revenue = x * y;
         if (Revenue > 10000){
             Revenue *= 0.95;
@@ -60,7 +63,7 @@ public class Exercise24Nov {
                             System.out.println("b) " + a + " is not a prime number");
                         } else {
                             int smallest_factor = 0;
-                            for (int x = 2; x < a_sqrot + (21 % 5 > 0 ? 1 : 0); x++) {
+                            for (int x = 2; x < a_sqrot; x++) {
                                 if (a % x == 0) {
                                     System.out.println("b) " + a + " is not a prime number");
 

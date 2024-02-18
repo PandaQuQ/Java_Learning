@@ -1,7 +1,7 @@
+ 
 
 // Import the Arrays class from the java.util package.
-import java.util.ArrayList;
-import java.util.Arrays;
+
 
 // Define a class named Q1.
 public class test {

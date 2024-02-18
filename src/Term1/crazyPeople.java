@@ -1,3 +1,4 @@
+ 
 public class crazyPeople {
     //fields
     String mentalStatus;

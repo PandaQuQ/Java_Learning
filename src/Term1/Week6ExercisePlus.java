@@ -1,4 +1,4 @@
-import java.awt.*;
+ 
 import java.util.*;
 import java.util.List;
 
@@ -8,22 +8,26 @@ public class Week6ExercisePlus {
         System.out.print("Enter the Monkey a's status: ");Boolean a_smile = sc.nextBoolean();
         System.out.print("\nEnter the Monkey b's status: ");Boolean b_smile = sc.nextBoolean();
         if (a_smile == b_smile) {System.out.println("True");}
+        sc.close();
     }
 
     public static void Exercise2(){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the the 1st integer: ");int num_1 = sc.nextInt();
         System.out.print("Enter the the 2nd integer: ");int num_2 = sc.nextInt();double sum = num_1 + num_2;System.out.println(sum);
-        }
+        sc.close();    
+    }
 
     public static void Exercise3(){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter n: "); int n = sc.nextInt();
         if (n<=21){System.out.print(Math.abs(n-21));}else{System.out.print(2*Math.abs(n-21));}
+        sc.close();
     }
     public static void Exercise4(){
         int hour = new Random().nextInt(0,23);
-        if (hour<7||hour>20){System.out.println("True");}
+        if (hour<7||hour>20){System.out.println("True");
+    }
     }
 
     public static void Exercise5(){
@@ -31,6 +35,7 @@ public class Week6ExercisePlus {
         System.out.print("Enter a: "); int a = sc.nextInt();
         System.out.print("Enter b: "); int b = sc.nextInt();
         if (a==10||b==10||a+b==10){System.out.println("True");}
+        sc.close();
     }
 
     public static void Exercise6(){
@@ -42,6 +47,7 @@ public class Week6ExercisePlus {
             str=String.join(" ",str_list);
         }
         System.out.println(str);
+        sc.close();
     }
 
     public static void Exercise7(){
@@ -53,6 +59,7 @@ public class Week6ExercisePlus {
         str_list.set(str_list.size()-1,tmp);
         str=String.join("",str_list);
         System.out.println(str);
+        sc.close();
     }
 
     public static void Exercise8(){
@@ -61,7 +68,7 @@ public class Week6ExercisePlus {
         System.out.print("Enter a n: "); int n = sc.nextInt();
         for (int i=1;i<n;i++){str+=tmp;}
         System.out.println(str);
-
+        sc.close();
 
     }
 

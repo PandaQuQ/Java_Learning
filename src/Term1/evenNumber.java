@@ -1,3 +1,4 @@
+ 
 import java.util.Scanner;
 
 public class evenNumber {
@@ -8,6 +9,7 @@ public class evenNumber {
         for (int i=1; i<=3; i++){
             System.out.println("Enter number "+ i + ": ");
             input_num = sc.nextInt();
+            sc.close();
             if (input_num%2 == 0){
                 count++;
             }

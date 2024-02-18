@@ -1,3 +1,4 @@
+ 
 import java.util.Scanner;
 
 public class revision_class_Q2 {
@@ -16,6 +17,7 @@ public class revision_class_Q2 {
         System.out.print("3rd: ");
         int c = sc.nextInt();
         System.out.println();
+        sc.close();
 
         //compare
         int largest, smallest;

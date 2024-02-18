@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-import static java.lang.Math.pow;
 
 public class Assignment {
     public static void main(String[] args){
@@ -21,5 +20,6 @@ public class Assignment {
         t = sc.nextDouble();
         r = r0 + v * t - 1 / 2 * a * Math.pow(t,2);
         System.out.println("c) " + r);
+        sc.close();
     }
 }

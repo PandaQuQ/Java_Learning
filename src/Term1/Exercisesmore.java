@@ -1,3 +1,4 @@
+ 
 import java.util.Random;
 import java.util.Scanner;
 
@@ -11,6 +12,7 @@ public class Exercisesmore {
         Scanner sc = new Scanner(System.in);
         System.out.print("Please enter a number: ");
         double inches = sc.nextDouble();
+        sc.close();
         System.out.println();
         double meters = inches/39.37;
         System.out.println(inches+" inches is equal to "+meters+" meters");
@@ -47,6 +49,7 @@ public class Exercisesmore {
         System.out.println();
         System.out.print("Please enter the index that where you want to insert:");
         int ind = sc.nextInt();
+        sc.close();
         System.out.println();
         int[] newIntArray = new int[intArray.length+1];
         for (int i=0; i<ind+1;i++){

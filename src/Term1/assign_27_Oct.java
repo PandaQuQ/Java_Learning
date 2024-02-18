@@ -12,6 +12,7 @@ public class assign_27_Oct {
         } catch (Exception e) {
             System.out.println("No");
         }
+        sc.close();
     }
 
     /*
@@ -29,6 +30,7 @@ public class assign_27_Oct {
                 num_old = num_new;
             }
         }
+        sc.close();
         System.out.println(num_old);
     }
 
@@ -41,6 +43,7 @@ public class assign_27_Oct {
         Scanner sc = new Scanner(System.in);
         System.out.println("Please enter an integer:");
         double num = sc.nextDouble();
+        sc.close();
         double remain = num % 1;
         if (remain >= 0.5) {
             num = (int) (num + 1 - remain);
@@ -61,6 +64,7 @@ public class assign_27_Oct {
         Scanner sc = new Scanner(System.in);
         System.out.println("Please enter your age:");
         int age = sc.nextInt();
+        sc.close();
         if (age >= 23) {
             System.out.println("“Purchase Permitted");
         } else {
@@ -109,6 +113,7 @@ public class assign_27_Oct {
         // Initial value
         System.out.print("Please enter your age: \n");
         double Age = Math.abs(sc.nextDouble()); // Positive int
+        sc.close();
         int Counter = 1;
         // Ask until an integer is entered
         while ((Counter <= 3) & (Age % 1 != 0 | Age < 0 | Age > 150)) {

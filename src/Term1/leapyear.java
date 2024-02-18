@@ -1,3 +1,4 @@
+ 
 import java.util.Scanner;
 public class leapyear {
     //leap year program
@@ -7,10 +8,11 @@ public class leapyear {
         //distance(args);
         arrayProduct(args);
     }
-    public static void leapyear(String[] args) {
+    public static void isLeapyear(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Which year do u want to type in: ");
         int year = sc.nextInt();
+        sc.close();
         System.out.println();
 
         if (Math.abs(year - 2024) % 4 == 0){
@@ -31,6 +33,7 @@ public class leapyear {
         System.out.println();
         System.out.print("How much time did you take(in seconds): ");
         float seconds = sc.nextFloat();
+        sc.close();
         System.out.println();
         float hourspeed = seconds / 60 / 60 /distance;
         float minutespeed = seconds / 60 /distance;

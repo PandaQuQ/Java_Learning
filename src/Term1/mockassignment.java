@@ -1,4 +1,3 @@
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class mockassignment {
@@ -41,6 +40,7 @@ public class mockassignment {
             try {
                 System.out.print("Please enter the "+(i+1)+" number: ");
                 input = sc.nextInt();
+                sc.close();
                 if (input<0){
                     attempts++;
                     System.out.println("Please enter a valid value");

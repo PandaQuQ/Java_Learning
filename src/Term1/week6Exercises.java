@@ -1,3 +1,4 @@
+ 
 import java.util.*;
 
 
@@ -25,11 +26,11 @@ public class week6Exercises {
         }else{
             System.out.println("Wrong Value!");
         }
+        sc.close();
     }
 
     public static void Exercise8() {
         Scanner sc = new Scanner(System.in);
-        int flag = 1;
         do {
             System.out.print("This is a program to let u enter two numbers and calculate the sum of them\nPlease enter 1st number: ");
             double a = sc.nextDouble();
@@ -42,6 +43,7 @@ public class week6Exercises {
                 break;
             }
         }while(true);
+        sc.close();
     }
 
     public static void Exercise9() {
@@ -60,15 +62,14 @@ public class week6Exercises {
             }
         }while (true);
         System.out.println("The sum of the "+(i-1)+" numbers are "+sum);
+        sc.close();
     }
 
     public static void Exercise10() {
-        ArrayList list_a = new ArrayList();
+        ArrayList<Double> list_a = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
         System.out.print("This is a program designed to display the minimum and maximum value frome the list you will enter\nThe exit code is a non-numerical input\n");
         int i = 1;
-        double Max = 0;
-        double Min = 0;
         do {
             System.out.print("Enter the No."+i+" number: ");
             try {
@@ -81,10 +82,11 @@ public class week6Exercises {
             }
 
         }while (true);
+        sc.close();
     }
 
     public static void Exercise11() {
-        ArrayList list_a = new ArrayList<>();
+        ArrayList<Integer> list_a = new ArrayList<>();
         for (int i =101;i<1000;i++){
             if ((Math.pow(((i - i%100 )/100),3)+Math.pow(((i%100 - i%10) /10),3)+Math.pow((i%10),3))==i){
             list_a.add(i);
@@ -102,6 +104,7 @@ public class week6Exercises {
         int flag = 0;
         if (num == 0 || num == 1){
             System.out.println("\n"+num+" is not a prime number.");
+            sc.close();
             return;
         }
         for (int i = 2;i<num;i++){
@@ -114,6 +117,7 @@ public class week6Exercises {
         if (flag != 1){
             System.out.println("\n"+num+" is a prime number");
         }
+        sc.close();
 
 
 
@@ -122,11 +126,12 @@ public class week6Exercises {
     }
     public static void Exercise6() {
         Scanner sc = new Scanner(System.in);
-        ArrayList<Integer> a_list = new ArrayList();
+        ArrayList<Integer> a_list = new ArrayList<>();
         System.out.print("Please enter the 1st number: ");
         int num1 = sc.nextInt();
         System.out.print("\nPlease enter the 2nd number: ");
         int num2 = sc.nextInt();
+        sc.close();
         int grnum;
         int lsnum;
         if (num2>num1){
@@ -168,6 +173,7 @@ public class week6Exercises {
     public static void Exercise13(){
         Scanner sc = new Scanner(System.in); ArrayList<String> name_list = new ArrayList<>();
         for (int i : new int[]{1, 2, 3, 4}) {System.out.print("\nPlease enter the "+i+" name: ");name_list.add(sc.next());}
+        sc.close();
         //a)
         List<String> asc = new ArrayList<>(name_list); Collections.sort(asc);
         //c)
@@ -183,7 +189,9 @@ public class week6Exercises {
         int guess;
         for (int i = 0; i<10;i++) {System.out.print("Please take a guess: ");guess = sc.nextInt();if(guess>num){System.out.println("too high");}else if(guess<num){System.out.println("too low");}else{System.out.println("Bingo");break;}}
         System.out.println("The number is "+num);
+        sc.close();
     }
+
     public static double getFact(double num){
         if (num == 1||num == 0){
             return 1;
@@ -197,6 +205,7 @@ public class week6Exercises {
         double sum = 0;
         System.out.print("Enter x: ");int x = sc.nextInt();
         System.out.print("\nEnter n: ");int n = sc.nextInt();
+        sc.close();
         System.out.println();
         if(n==1){System.out.println(1);}else{for (int i = 1; i <= n; i++) {sum += -Math.pow(-1, i) * Math.pow(x, 2 * i - 1) / getFact(2 * i - 1);}System.out.println(sum);}
 
@@ -207,6 +216,7 @@ public class week6Exercises {
         double sum = 0;
         System.out.print("Enter x: ");int x = sc.nextInt();
         System.out.print("\nEnter n: ");int n = sc.nextInt();
+        sc.close();
         System.out.println();
         if(n==1){System.out.println(sum);}else{for (int i = 1; i <= n; i++){sum+=-Math.pow(-1,i)*Math.pow(x,2*(i-1))/getFact(2*(i-1));}System.out.println(sum);}
 
@@ -216,12 +226,14 @@ public class week6Exercises {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a positive integer: ");int n = sc.nextInt();
         double sum = 0;
+        sc.close();
         for (double i = 1; i<=n;i++){sum+=(1/i);}
         System.out.println("\n"+sum);
     }
     public static void Exercise18(){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a positive integer: ");int n = sc.nextInt();
+        sc.close();
         double sum = 0;
         for (double i = 1; i<=n;i++){sum+=-Math.pow(-1,i)*(1/i);}
         System.out.println("\n"+sum);

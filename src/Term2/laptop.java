@@ -15,6 +15,24 @@ public class laptop {
     boolean isBusiness;
     boolean isStudent;
     boolean isMultimedia;
+    laptop(String brand, int price, String color,int ram, int storage,String processor,String os, boolean isGaming, boolean isTouchscreen, boolean isConvertible, boolean isDetachable, boolean isLightweight, boolean isPortable, boolean isBusiness,boolean isStudent, boolean isMultimedia){
+        this.brand = brand;
+        this.price = price;
+        this.color = color;
+        this.ram = ram;
+        this.storage = storage;
+        this.processor = processor;
+        this.os = os;
+        this.isGaming = isGaming;
+        this.isTouchscreen = isTouchscreen;
+        this.isConvertible = isConvertible;
+        this.isDetachable = isDetachable;
+        this.isLightweight = isLightweight;
+        this.isPortable = isPortable;
+        this.isBusiness = isBusiness;
+        this.isStudent = isStudent;
+        this.isMultimedia = isMultimedia;
+    }
     boolean isGaming(Boolean A){
         if(A == false){
             this.isGaming = false;
@@ -131,38 +149,12 @@ public class laptop {
     }
 
     public static void main(String[] args) {
-        laptop laptop1 = new laptop();
-        laptop1.setBrand("Dell");
-        laptop1.setPrice(500);
-        laptop1.setColor("Black");
-        laptop1.setRam(8);
-        laptop1.setStorage(256);
-        laptop1.setProcessor("Intel Core i5");
-        laptop1.setOs("Windows 10");
-        laptop1.isGaming(false);
-        laptop1.isTouchscreen(false);
-        laptop1.isConvertible(false);
-        laptop1.isDetachable(false);
-        laptop1.isLightweight(false);
-        laptop1.isPortable(true);
-        laptop1.isBusiness(true);
-        laptop1.isStudent(false);
-        laptop1.isMultimedia(true);
-        System.out.println("Brand: " + laptop1.getBrand());
-        System.out.println("Price: " + laptop1.getPrice());
-        System.out.println("Color: " + laptop1.getColor());
-        System.out.println("RAM: " + laptop1.getRam());
-        System.out.println("Storage: " + laptop1.getStorage());
-        System.out.println("Processor: " + laptop1.getProcessor());
-        System.out.println("OS: " + laptop1.getOs());
-        System.out.println("Gaming: " + laptop1.isGaming);
-        System.out.println("Touchscreen: " + laptop1.isTouchscreen);
-        System.out.println("Convertible: " + laptop1.isConvertible);
-        System.out.println("Detachable: " + laptop1.isDetachable);
-        System.out.println("Lightweight: " + laptop1.isLightweight);
-        System.out.println("Portable: " + laptop1.isPortable);
-        System.out.println("Business: " + laptop1.isBusiness);
-        System.out.println("Student: " + laptop1.isStudent);
-        System.out.println("Multimedia: " + laptop1.isMultimedia);
+        laptop Dell = new laptop("Dell", 500, "Black", 8, 256, "Intel Core i5", "Windows 10", false, false, false, false, false, true, true, false, true);
+        laptop HP = new laptop("HP", 600, "Silver", 16, 512, "Intel Core i7", "Windows 10", true, true, true, false, true, true, true, true, true);
+        laptop Lenovo = new laptop("Lenovo", 700, "Black", 16, 512, "Intel Core i7", "Windows 10", true, true, true, true, true, true, true, true, true);
+        System.out.println("Brand: " + Dell.brand+" Price: "+Dell.price+" Color: "+Dell.color+" RAM: "+Dell.ram+" Storage: "+Dell.storage+" Processor: "+Dell.processor+" OS: "+Dell.os+" Gaming: "+Dell.isGaming+" Touchscreen: "+Dell.isTouchscreen+" Convertible: "+Dell.isConvertible+" Detachable: "+Dell.isDetachable+" Lightweight: "+Dell.isLightweight+" Portable: "+Dell.isPortable+" Business: "+Dell.isBusiness+" Student: "+Dell.isStudent+" Multimedia: "+Dell.isMultimedia);
+        System.out.println("Brand: " + HP.brand+" Price: "+HP.price+" Color: "+HP.color+" RAM: "+HP.ram+" Storage: "+HP.storage+" Processor: "+HP.processor+" OS: "+HP.os+" Gaming: "+HP.isGaming+" Touchscreen: "+HP.isTouchscreen+" Convertible: "+HP.isConvertible+" Detachable: "+HP.isDetachable+" Lightweight: "+HP.isLightweight+" Portable: "+HP.isPortable+" Business: "+HP.isBusiness+" Student: "+HP.isStudent+" Multimedia: "+HP.isMultimedia);
+        System.out.println("Brand: " + Lenovo.brand+" Price: "+Lenovo.price+" Color: "+Lenovo.color+" RAM: "+Lenovo.ram+" Storage: "+Lenovo.storage+" Processor: "+Lenovo.processor+" OS: "+Lenovo.os+" Gaming: "+Lenovo.isGaming+" Touchscreen: "+Lenovo.isTouchscreen+" Convertible: "+Lenovo.isConvertible+" Detachable: "+Lenovo.isDetachable+" Lightweight: "+Lenovo.isLightweight+" Portable: "+Lenovo.isPortable+" Business: "+Lenovo.isBusiness+" Student: "+Lenovo.isStudent+" Multimedia: "+Lenovo.isMultimedia);
+
     }
 }

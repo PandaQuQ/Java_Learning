@@ -44,6 +44,6 @@ public class TriangleClass {
         System.out.println();
 
         System.out.println("The area of this triangle is "+Area(a, b, c)+"\nThe circumference of this triangle is "+circumference(a, b, c));
-
+        sc.close();
     }
 }
